@@ -1,13 +1,6 @@
-# ENGLISH
+# Dictionary
 
-## Content table
-
-1. [Dictionary](#dictionary)
-
-
-### <a name='dictionary'>Dictionary</a>
-
-#### 1 day
+## 1 day
 
 | English | Russian |
 | - | - |
@@ -58,7 +51,7 @@
 | greatly | значительно, сильно |
 | to decrease | уменьшать |
 
-#### 2 day
+## 2 day
 
 | English | Russian |
 | - | - |
@@ -102,7 +95,7 @@
 | affacting | воздействие |
 | similar | похожий, подобный |
 
-3 day
+## 3 day
 
 | English | Russian |
 | - | - |
@@ -141,4 +134,19 @@
 | complete | завершенный |
 | itself | сам, себя |
 
+## 3 day (Talking about your goals)
+
+| Russian | English |
+| - | - |
+| держать в уме | to keep in mind |
+| реклама | advertising |
+| в / в пределах | within |
+| уверенность / гарантия | assurance |
+| применять | apply |
+| стремиться | to aim |
+| цель | an aim |
+| в какой-то момент | at a point |
+| продивгать / способствовать | promoted |
+| точно | accuratelly |
+| соответствовать / подходить | fit |
 
