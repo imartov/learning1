@@ -1,0 +1,148 @@
+/* Обнуление */
+*,*:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Стили для демонстрации */
+.wrapper {
+
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    /* position: fixed фиксирует элемент при скроле */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9a78bf;
+    z-index: 3;
+}
+
+.header__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header__logo {
+    flex: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+}
+
+.header__logo img {
+    max-width: 100%;
+    
+    /* убираем подрезание картинки, если она круглая */
+    display: block;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .header__burger span {
+        position: absolute;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    /* рисуем полосу */
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+    }
+
+    /* рисуем полосу сверху */
+    .header__burger::before {
+        top: 0;
+    }
+
+    /* рисуем полосу снизу */
+    .header__burger::after {
+        bottom: 0;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #9debe5;
+    }
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+}
+
+.header__list li {
+    margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.content__text {
+    padding: 100px 0px 0px 0px;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.content__text p {
+    /* Отсупы у параграфа */
+    margin: 0px 0px 20px 0px;
+}
