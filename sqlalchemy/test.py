@@ -1,39 +1,46 @@
-import sqlalchemy as db
+import sqlalchemy as db 
 
 
-# двигатель БД, отправная точка sql-приложения
-engine = db.create_engine('sqlite:///products-sqlalchemy.db')
+metadata = db.MetaData() # информация о БД и ее объектах
 
-# устанавливаем соединение с БД
-connection = engine.connect()
+authors = db.Table("authors", metadata,
+    db.Column("id_author", db.Integer, primary_key=True),
+    db.Column("name", db.String(250))
+)
 
-# создаем объект для хранения таблиц в БД
-metadata = db.MetaData()
+books = db.Table("books", metadata,
+    db.Column("id_book", db.Integer, primary_key=True),
+    db.Column("title", db.String(250), nullable=False),
+    db.Column("author_id", db.Integer, db.ForeignKey("authors.id_author")),
+    db.Column("genre", db.String(250)),
+    db.Column("price", db.Integer)
+)
 
-# создание таблицы
-products = db.Table('products', metadata, 
-                    db.Column('product_id', db.Integer, primary_key=True),
-                    db.Column('product_name', db.Text),
-                    db.Column('suplier_name', db.Text),
-                    db.Column('price_per_tonne', db.Integer))
-
+engine = db.create_engine('sqlite:///books.db')
 metadata.create_all(engine)
 
-# создаем объект данных
-insertion_query = products.insert().values([
-    {"product_name": "Banana", "suplier_name": "United Bananas", "price_per_tonne": 7000},
-    {"product_name": "Avocado", "suplier_name": "United Avocados", "price_per_tonne": 12000},
-    {"product_name": "Tomatoes", "suplier_name": "United Tomatoes", "price_per_tonne": 3100}
+conneection = engine.connect()
+
+insert_author_query = authors.insert().values([
+    {"name": "Lutz"}
 ])
+conneection.execute(insert_author_query)
+conneection.close()
 
-# выполняем вставку созданного объекта данных
-connection.execute(insertion_query)
+insert_books_query = books.insert().values([
+    {"title": "Learn Python", "author_id": 1, "genre": "Education", "price": 1299},
+    {"title": "Clear Python", "author_id": 1, "genre": "Education", "price": 956},
+])
+conneection.execute(insert_books_query)
+conneection.close()
 
-# создаем объект выборки
-select_all_query = db.select([products]) # заключаем имя таблицы в спсиок, так как ожидаем множественное знаение
+books_gr_1000_query = books.select().where(books.columns.price > 1000)
+result = conneection.execute(books_gr_1000_query)
 
-# выполняем операцию с помощью connection
-select_all_result = connection.execute(select_all_query)
+for row in result:
+    print(row)
 
-# вывод в консоль
-print(select_all_result.fetchall())
+join_select = db.select([authors, books]).where(authors.columns.id_author == books.columns.author_id)
+result_join = conneection.execute(join_select)
+print(result_join)
+# TODO: fix exception
