@@ -134,7 +134,7 @@
 | complete | завершенный |
 | itself | сам, себя |
 
-## 3 day (Talking about your goals)
+## 4 day (Talking about your goals)
 
 | Russian | English |
 | - | - |
@@ -150,3 +150,8 @@
 | точно | accuratelly |
 | соответствовать / подходить | fit |
 
+## 5 day | Responding to common questions
+
+| Russian | English |
+| - | - |
+| держать в уме | to keep in mind |
