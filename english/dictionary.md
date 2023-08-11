@@ -154,4 +154,30 @@
 
 | Russian | English |
 | - | - |
-| держать в уме | to keep in mind |
+| точный | exact |
+| кратко | briefly |
+| основные моменты | highlights |
+| достижение | accomplishment |
+| проявляться, казаться | appear |
+| решение | decision |
+| разнообразие | variety |
+| обзор | overview |
+| связывание | linking |
+| прежде всего, в первую очередь | primarily |
+| впечатленный | impressed |
+| инновационная | innovative |
+| преодалеть | overcome |
+| ценность | value |
+| совпадать | align |
+| объяснять | explain |
+| прозрачность | transparency |
+| ценить | appreciate |
+| взаимодействие | interactions |
+| гипотетический | hypothetical |
+| условный, обусловленный | conditioanl |
+| в частности | in particular |
+| рассматривать, учитывать | consider |
+| ожидания | expectations |
+| безусловно, конечно | certinatly |
+| выражения | expressions |
+| вместо | instead |
