@@ -181,3 +181,18 @@
 | безусловно, конечно | certinatly |
 | выражения | expressions |
 | вместо | instead |
+
+## 6 day | Question to ask
+
+| Russian | English |
+| - | - |
+| почти | in nearly |
+| отсутствовать | lack |
+| любопытство | curiosity |
+| более того | furthermore |
+| объявление, реклама | advertisement |
+| желанный | desired |
+| определять, устанавливать | determine |
+| выстраиваться, присоединяться, расстановка | line up |
+| этап | stage |
+
