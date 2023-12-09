@@ -196,3 +196,18 @@
 | выстраиваться, присоединяться, расстановка | line up |
 | этап | stage |
 
+## Talking about your skills and strengths
+
+| Russian | English |
+| - | - |
+| те | ones |
+| рассматривать | consider |
+| готовность | willingness |
+| область | area |
+| я горжусь собой | i pride myself one |
+| адаптироваться | adapt |
+| подход | approach |
+| не смотря ни на что | regardless |
+| быть в курсе событий | being up to date |
+| выделять | highlight |
+| предполагать, вовлекать | involve |
