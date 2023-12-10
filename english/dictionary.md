@@ -211,3 +211,19 @@
 | быть в курсе событий | being up to date |
 | выделять | highlight |
 | предполагать, вовлекать | involve |
+
+## Talking about your weaknesses
+
+| Russian | English |
+| - | - |
+| может | показаться |
+| ловушка | trap |
+| поглащать, захватывать | absorb |
+| терять след, счет | to lose track |
+| определять, оценивать | evaulate |
+| честно | honestly |
+| отражать | reflect |
+| дальше | futher |
+| улучшение | improving |
+|  |  |
+|  |  |
